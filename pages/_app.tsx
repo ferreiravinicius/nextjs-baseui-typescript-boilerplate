@@ -10,8 +10,6 @@ const Centered = styled('div', {
   alignItems: 'center',
   height: '100%',
 });
-
-
 export default class CustomApp extends App {
   render() {
     const { Component, pageProps } = this.props;
