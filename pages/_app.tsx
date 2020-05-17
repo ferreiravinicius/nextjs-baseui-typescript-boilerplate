@@ -1,6 +1,6 @@
 import React from "react";
 import App from "next/app";
-import {LightTheme, BaseProvider, styled} from 'baseui';
+import {LightTheme, ThemeProvider, styled} from 'baseui';
 import { Provider as StyletronProvider } from "styletron-react";
 import {styletron, debug} from '../config/styletron';
 
@@ -15,11 +15,11 @@ export default class CustomApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <StyletronProvider value={styletron} debug={debug} debugAfterHydration>
-        <BaseProvider theme={LightTheme}>
+        <ThemeProvider theme={LightTheme}>
           <Centered>
             <Component {...pageProps} />
           </Centered>
-        </BaseProvider>
+        </ThemeProvider>
       </StyletronProvider>
     );
   }

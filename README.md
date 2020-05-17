@@ -1,0 +1,1 @@
+🔫 Boilerplate for Nextjs + BaseUI (Styletron) + React + Typescript
