@@ -2,9 +2,9 @@
 // and then use them in any component by importing them. For
 // example, to import the interface below do:
 //
-// import User from 'path/to/interfaces';
+// import YourAwesomeType from 'path/to/interfaces';
 
-export type User = {
+export type YourAwesomeType = {
   id: number
   name: string
 }
